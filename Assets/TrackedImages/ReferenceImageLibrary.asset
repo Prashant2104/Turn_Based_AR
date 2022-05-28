@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4824064280980412710
+  m_GuidHigh: 2325889285957577603
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4841961402348338218
+      m_GuidHigh: 7657596343733143949
+    m_SerializedTextureGuid:
+      m_GuidLow: 2599829647056084705
+      m_GuidHigh: 477240112099987993
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Vampire
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5636384194486541718
+      m_GuidHigh: 6828961397557821093
+    m_SerializedTextureGuid:
+      m_GuidLow: 4540835148582697044
+      m_GuidHigh: 13401241079655076139
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: EvilWizard
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4858623161038398821
+      m_GuidHigh: 7251132938328736432
+    m_SerializedTextureGuid:
+      m_GuidLow: 12849997576392289245
+      m_GuidHigh: 7418408127542665403
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Brawler
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5376418527591612561
+      m_GuidHigh: 10129770242979855799
+    m_SerializedTextureGuid:
+      m_GuidLow: 5522600789487143212
+      m_GuidHigh: 456728445161518473
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Knight
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4897532911027246534
+      m_GuidHigh: 13547157523648880002
+    m_SerializedTextureGuid:
+      m_GuidLow: 3896859835216024319
+      m_GuidHigh: 12689758867023021578
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Magician
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5586643764407789364
+      m_GuidHigh: 16808340397027605641
+    m_SerializedTextureGuid:
+      m_GuidLow: 12300587196910759905
+      m_GuidHigh: 6343045902988339112
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Player
+    m_Texture: {fileID: 0}
