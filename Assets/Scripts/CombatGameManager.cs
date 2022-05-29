@@ -11,17 +11,11 @@ public class CombatGameManager : MonoBehaviour
     public GameObject player;
     public GameObject ChoicePanel;
     public GameObject spawnPanel;
-    public Button startButton;
-
-    //public ARSession aRSession;
     private void Start()
     {
         enemies.SetActive(false);
         player.SetActive(false);
         ChoicePanel.SetActive(true);
-        startButton.enabled = false;
-
-        //aRSession.enabled = false;
     }
 
     public void EnemySelect(int _choice)
@@ -32,15 +26,9 @@ public class CombatGameManager : MonoBehaviour
             if(i != _choice)
                 enemies.transform.GetChild(i).gameObject.SetActive(false);
         }
-        startButton.enabled = true;
-    }
-
-    public void StartGame()
-    {
         enemies.SetActive(true);
         player.SetActive(true);
         ChoicePanel.SetActive(false);
-        //aRSession.enabled = true;
         spawnPanel.SetActive(true);
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public enum BattleState
 {
@@ -213,6 +214,7 @@ public class BattleSystem : MonoBehaviour
     {
         Enemy_GO.GetComponent<AudioSource>().Stop();
         DialogueText.text = "You win";
+        SceneManager.LoadScene(0);
         Enemy_GO.GetComponent<Animator>().SetTrigger("Death");
         yield return new WaitForSeconds(0.5f);
         BattleHUD.SetActive(false);
@@ -221,12 +223,6 @@ public class BattleSystem : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         GetComponent<BattleSystem>().enabled = false;
 
-        battleController.MaxHP += 1;
-        battleController.CurrentHP += 1;
-        battleController.MeleeDam += 0.5f;
-        battleController.MeleeDef += 0.5f;
-        battleController.MagicDam += 0.5f;
-        battleController.MagicDef += 0.5f;
     }
     IEnumerator Lost()
     {
@@ -236,5 +232,7 @@ public class BattleSystem : MonoBehaviour
         BattleHUD.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         GetComponent<BattleSystem>().enabled = false;
+
+        SceneManager.LoadScene(0);
     }
 }

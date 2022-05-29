@@ -43,15 +43,14 @@ public class PlayerBattleController : MonoBehaviour
 
     private void OnEnable()
     {
-        MeleeDamage = MeleeDam;
-        MeleeDefence = MeleeDef;
-        MagicDamage = MagicDam;
-        MagicDefence = MagicDef;
-
-        //this.gameObject.transform.position = PlayerOG.transform.position;
         battleSystem.Player_GO = this.gameObject;
         Enemy = battleSystem.Enemy_GO;
         this.transform.LookAt(Enemy.transform);
+
+        MeleeDamage = Enemy.GetComponent<EnemyAI>().MeleeDamage + 2;
+        MeleeDefence = Enemy.GetComponent<EnemyAI>().MeleeDefence + 2;
+        MagicDamage = Enemy.GetComponent<EnemyAI>().MagicDamage + 2;
+        MagicDefence = Enemy.GetComponent<EnemyAI>().MagicDefence + 2;
     }
     public bool TakeMeleeDamage(float Dmg)
     {
