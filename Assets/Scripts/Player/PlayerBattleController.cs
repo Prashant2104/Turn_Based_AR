@@ -87,6 +87,12 @@ public class PlayerBattleController : MonoBehaviour
     {
         HeavyMagicAttack.Play(true);
     }
+
+    IEnumerator VFX_Stop()
+    {
+        yield return new WaitForSeconds(1f);
+        HeavyMagicAttack.Stop();
+    }
     public void DefenceVFX()
     {
         Defence.Play();
